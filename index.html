@@ -1531,426 +1531,434 @@
 
     <script>
         // Translations Object
-        const translations = {
-            en: {
-                page_title: "3 Star Auto Door - Premium Automatic Door Solutions",
-                logo_text_1: "3 Star",
-                logo_text_2: "Auto Door",
-                nav_home: "Home",
-                nav_services: "Services",
-                nav_projects: "Projects",
-                nav_about: "About Us",
-                nav_contact: "Contact",
-                nav_quote: "Request Quote",
-                hero_badge: "PREMIUM AUTOMATIC DOOR SOLUTIONS",
-                hero_title: "Automatic Door Installation & Repair Specialists",
-                hero_desc: "Fast Installation • 24/7 Emergency Service • High-Quality Brands<br>Serving Homes, Businesses, and Industries",
-                btn_quote: "Request a Quotation",
-                btn_contact: "Contact Us",
-                service_subtitle: "Our Services",
-                service_title: "Comprehensive Door Solutions",
-                service_desc: "We provide professional automatic door services for residential, commercial, and industrial applications",
-                srv_1_title: "Automatic Sliding Doors",
-                srv_1_desc: "Professional installation and repair of automatic sliding doors for commercial and residential use.",
-                srv_2_title: "Automatic Swing Doors",
-                srv_2_desc: "Efficient swing door systems that provide accessibility and convenience for all users.",
-                srv_3_title: "Repair & Maintenance",
-                srv_3_desc: "Regular maintenance and prompt repair services to keep your automatic doors functioning perfectly.",
-                srv_4_title: "Motor & Sensor Replacement",
-                srv_4_desc: "Replacement of faulty motors and sensors with high-quality components from trusted brands.",
-                srv_5_title: "Spare Parts Delivery",
-                srv_5_desc: "Fast delivery of genuine spare parts for all major automatic door brands and models.",
-                srv_6_title: "Custom Door Solutions",
-                srv_6_desc: "Tailored automatic door solutions designed to meet your specific requirements and space constraints.",
-                learn_more: "Learn More",
-                why_subtitle: "Why Choose Us",
-                why_title: "Your Trusted Door Partner",
-                why_desc: "Discover what makes The 3 Star Auto Door your preferred choice for automatic door solutions",
-                feat_1_title: "Fast Installation",
-                feat_1_desc: "We understand time is valuable. Our team works efficiently to complete installations with minimal disruption.",
-                feat_2_title: "High-Quality Brands",
-                feat_2_desc: "We use only premium components from trusted manufacturers to ensure durability and reliability.",
-                feat_3_title: "Affordable Pricing",
-                feat_3_desc: "Competitive pricing without compromising on quality, offering excellent value for your investment.",
-                feat_4_title: "24/7 Emergency Service",
-                feat_4_desc: "Door emergencies don't wait for business hours. Our emergency team is available round the clock.",
-                feat_5_title: "Warranty on Installation",
-                feat_5_desc: "Peace of mind with comprehensive warranty coverage on all our installation services.",
-                feat_6_title: "After-Sales Support",
-                feat_6_desc: "Our relationship continues after installation with reliable maintenance and support services.",
-                proj_subtitle: "Our Projects",
-                proj_title: "Recent Installations",
-                proj_desc: "Browse through our portfolio of completed automatic door installations and repairs",
-                gal_1_title: "Commercial Sliding Doors",
-                gal_1_desc: "Office building entrance",
-                gal_2_title: "Hospital Swing Doors",
-                gal_2_desc: "Healthcare facility installation",
-                gal_3_title: "Glass Automatic Doors",
-                gal_3_desc: "Retail store entrance",
-                gal_4_title: "Motor Replacement",
-                gal_4_desc: "Commercial door repair",
-                gal_5_title: "Custom Solution",
-                gal_5_desc: "Specialized industrial application",
-                gal_6_title: "Regular Maintenance",
-                gal_6_desc: "Preventive care service",
-                test_subtitle: "Testimonials",
-                test_title: "What Our Clients Say",
-                test_desc: "Hear from our satisfied customers about their experience with The 3 Star Auto Door",
-                test_1_text: "\"The team at 3 Star Auto Door installed automatic sliding doors at our office entrance. They were professional, efficient, and the doors work perfectly. We've had zero issues since installation. Highly recommended!\"",
-                test_1_auth: "Ahmed Al-Mansoori",
-                test_1_role: "Office Manager, Al-Noor Enterprises",
-                quote_subtitle: "Get In Touch",
-                quote_title: "Request a Quotation",
-                quote_desc: "Get in touch with us for a free, no-obligation quote on your automatic door project",
-                form_name: "Full Name",
-                form_phone: "Phone Number",
-                form_email: "Email Address",
-                form_service: "Service Needed",
-                form_msg: "Additional Details",
-                form_submit: "Submit Request",
-                opt_select: "Select a service",
-                opt_inst: "Automatic Door Installation",
-                opt_repair: "Door Repair & Maintenance",
-                opt_parts: "Spare Parts",
-                opt_custom: "Custom Solution",
-                opt_other: "Other",
-                ph_name: "Your Full Name",
-                ph_phone: "Your Phone Number",
-                ph_email: "Your Email Address",
-                ph_msg: "Please provide any additional information about your project...",
-                footer_about_title: "3 Star Auto Door",
-                footer_about_text: "Professional automatic door installation, repair, and maintenance services. Serving residential, commercial, and industrial clients with quality and reliability.",
-                footer_links: "Quick Links",
-                footer_contact: "Contact Info",
-                contact_phone: "Phone:",
-                contact_email: "Email:",
-                contact_addr: "Address:",
-                addr_text: "Khamis Mushait, Saudi Arabia",
-                footer_hours: "Operating Hours",
-                days_week: "Sunday - Thursday:",
-                day_fri: "Friday:",
-                day_sat: "Saturday:",
-                closed: "Closed",
-                emergency: "Emergency Service:",
-                copyright: "&copy; 2023 3 Star Auto Door. All Rights Reserved."
-            },
-            ar: {
-                page_title: "3 ستار للأبواب الأوتوماتيكية - حلول متكاملة",
-                logo_text_1: "3 ستار ",
-                logo_text_2: " للأبواب",
-                nav_home: "الرئيسية",
-                nav_services: "خدماتنا",
-                nav_projects: "المشاريع",
-                nav_about: "من نحن",
-                nav_contact: "اتصل بنا",
-                nav_quote: "طلب عرض سعر",
-                hero_badge: "حلول الأبواب الأوتوماتيكية المتميزة",
-                hero_title: "متخصصون في تركيب وإصلاح الأبواب الأوتوماتيكية",
-                hero_desc: "تركيب سريع • خدمة طوارئ 24/7 • ماركات عالية الجودة<br>نخدم المنازل والشركات والقطاعات الصناعية",
-                btn_quote: "اطلب عرض سعر",
-                btn_contact: "اتصل بنا",
-                service_subtitle: "خدماتنا",
-                service_title: "حلول أبواب شاملة",
-                service_desc: "نقدم خدمات احترافية للأبواب الأوتوماتيكية للتطبيقات السكنية والتجارية والصناعية",
-                srv_1_title: "أبواب سحاب أوتوماتيكية",
-                srv_1_desc: "تركيب وإصلاح احترافي للأبواب المنزلقة الأوتوماتيكية للاستخدام التجاري والسكني.",
-                srv_2_title: "أبواب مفصلية أوتوماتيكية",
-                srv_2_desc: "أنظمة أبواب مفصلية فعالة توفر سهولة الوصول والراحة لجميع المستخدمين.",
-                srv_3_title: "الإصلاح والصيانة",
-                srv_3_desc: "خدمات صيانة دورية وإصلاح فوري للحفاظ على عمل أبوابك الأوتوماتيكية بكفاءة تامة.",
-                srv_4_title: "استبدال المحركات والحساسات",
-                srv_4_desc: "استبدال المحركات والحساسات التالفة بمكونات عالية الجودة من ماركات موثوقة.",
-                srv_5_title: "توصيل قطع الغيار",
-                srv_5_desc: "توصيل سريع لقطع غيار أصلية لجميع الماركات والموديلات الرئيسية للأبواب.",
-                srv_6_title: "حلول أبواب مخصصة",
-                srv_6_desc: "حلول أبواب أوتوماتيكية مصممة خصيصاً لتلبية متطلباتك ومساحتك المحددة.",
-                learn_more: "المزيد",
-                why_subtitle: "لماذا تختارنا",
-                why_title: "شريكك الموثوق للأبواب",
-                why_desc: "اكتشف ما يجعل 3 ستار الخيار المفضل لحلول الأبواب الأوتوماتيكية",
-                feat_1_title: "تركيب سريع",
-                feat_1_desc: "ندرك قيمة الوقت. يعمل فريقنا بكفاءة لإكمال التركيب بأقل قدر من التعطيل.",
-                feat_2_title: "ماركات عالية الجودة",
-                feat_2_desc: "نستخدم فقط مكونات متميزة من مصنعين موثوقين لضمان المتانة والموثوقية.",
-                feat_3_title: "أسعار تنافسية",
-                feat_3_desc: "أسعار منافسة دون المساومة على الجودة، مما يوفر قيمة ممتازة لاستثمارك.",
-                feat_4_title: "خدمة طوارئ 24/7",
-                feat_4_desc: "أعطال الأبواب لا تنتظر ساعات العمل. فريق الطوارئ لدينا متاح على مدار الساعة.",
-                feat_5_title: "ضمان على التركيب",
-                feat_5_desc: "راحة بال تامة مع تغطية ضمان شاملة على جميع خدمات التركيب لدينا.",
-                feat_6_title: "دعم ما بعد البيع",
-                feat_6_desc: "علاقتنا تستمر بعد التركيب مع خدمات صيانة ودعم موثوقة.",
-                proj_subtitle: "مشاريعنا",
-                proj_title: "أحدث التركيبات",
-                proj_desc: "تصفح معرض أعمالنا من التركيبات والإصلاحات المنجزة",
-                gal_1_title: "أبواب سحاب تجارية",
-                gal_1_desc: "مدخل مبنى مكاتب",
-                gal_2_title: "أبواب مستشفيات",
-                gal_2_desc: "تركيب لمنشأة طبية",
-                gal_3_title: "أبواب زجاجية",
-                gal_3_desc: "مدخل متجر بيع بالتجزئة",
-                gal_4_title: "استبدال محرك",
-                gal_4_desc: "إصلاح باب تجاري",
-                gal_5_title: "حلول مخصصة",
-                gal_5_desc: "تطبيق صناعي خاص",
-                gal_6_title: "صيانة دورية",
-                gal_6_desc: "خدمة صيانة وقائية",
-                test_subtitle: "آراء العملاء",
-                test_title: "ماذا يقول عملاؤنا",
-                test_desc: "اقرأ تجارب عملائنا الراضين عن خدمات 3 ستار للأبواب الأوتوماتيكية",
-                test_1_text: "\"قام فريق 3 ستار بتركيب أبواب سحاب أوتوماتيكية لمدخل مكتبنا. كانوا محترفين وسريعين، والأبواب تعمل بشكل مثالي. لم نواجه أي مشاكل منذ التركيب. أنصح بهم بشدة!\"",
-                test_1_auth: "أحمد المنصوري",
-                test_1_role: "مدير مكتب، مؤسسة النور",
-                quote_subtitle: "تواصل معنا",
-                quote_title: "اطلب عرض سعر",
-                quote_desc: "تواصل معنا للحصول على عرض سعر مجاني لمشروعك",
-                form_name: "الاسم الكامل",
-                form_phone: "رقم الهاتف",
-                form_email: "البريد الإلكتروني",
-                form_service: "الخدمة المطلوبة",
-                form_msg: "تفاصيل إضافية",
-                form_submit: "إرسال الطلب",
-                opt_select: "اختر خدمة",
-                opt_inst: "تركيب باب أوتوماتيكي",
-                opt_repair: "إصلاح وصيانة الأبواب",
-                opt_parts: "قطع غيار",
-                opt_custom: "حلول مخصصة",
-                opt_other: "أخرى",
-                ph_name: "الاسم الكامل",
-                ph_phone: "رقم الهاتف",
-                ph_email: "البريد الإلكتروني",
-                ph_msg: "يرجى تقديم أي معلومات إضافية حول مشروعك...",
-                footer_about_title: "عن 3 ستار",
-                footer_about_text: "خدمات احترافية لتركيب وصيانة وإصلاح الأبواب الأوتوماتيكية. نخدم العملاء السكنيين والتجاريين والصناعيين بجودة وموثوقية.",
-                footer_links: "روابط سريعة",
-                footer_contact: "معلومات الاتصال",
-                contact_phone: "الهاتف:",
-                contact_email: "البريد:",
-                contact_addr: "العنوان:",
-                addr_text: "خميس مشيط، المملكة العربية السعودية",
-                footer_hours: "ساعات العمل",
-                days_week: "الأحد - الخميس:",
-                day_fri: "الجمعة:",
-                day_sat: "السبت:",
-                closed: "مغلق",
-                emergency: "خدمة الطوارئ:",
-                copyright: "&copy; 2023 3 ستار للأبواب الأوتوماتيكية. جميع الحقوق محفوظة."
-            }
-        };
+        // --- 1. TRANSLATIONS CONFIGURATION ---
+const translations = {
+    en: {
+        page_title: "3 Star Auto Door - Premium Automatic Door Solutions",
+        logo_text_1: "3 Star",
+        logo_text_2: "Auto Door",
+        nav_home: "Home",
+        nav_services: "Services",
+        nav_projects: "Projects",
+        nav_about: "About Us",
+        nav_contact: "Contact",
+        nav_quote: "Request Quote",
+        hero_badge: "PREMIUM AUTOMATIC DOOR SOLUTIONS",
+        hero_title: "Automatic Door Installation & Repair Specialists",
+        hero_desc: "Fast Installation • 24/7 Emergency Service • High-Quality Brands<br>Serving Homes, Businesses, and Industries",
+        btn_quote: "Request a Quotation",
+        btn_contact: "Contact Us",
+        service_subtitle: "Our Services",
+        service_title: "Comprehensive Door Solutions",
+        service_desc: "We provide professional automatic door services for residential, commercial, and industrial applications",
+        srv_1_title: "Automatic Sliding Doors",
+        srv_1_desc: "Professional installation and repair of automatic sliding doors for commercial and residential use.",
+        srv_2_title: "Automatic Swing Doors",
+        srv_2_desc: "Efficient swing door systems that provide accessibility and convenience for all users.",
+        srv_3_title: "Repair & Maintenance",
+        srv_3_desc: "Regular maintenance and prompt repair services to keep your automatic doors functioning perfectly.",
+        srv_4_title: "Motor & Sensor Replacement",
+        srv_4_desc: "Replacement of faulty motors and sensors with high-quality components from trusted brands.",
+        srv_5_title: "Spare Parts Delivery",
+        srv_5_desc: "Fast delivery of genuine spare parts for all major automatic door brands and models.",
+        srv_6_title: "Custom Door Solutions",
+        srv_6_desc: "Tailored automatic door solutions designed to meet your specific requirements and space constraints.",
+        learn_more: "Learn More",
+        why_subtitle: "Why Choose Us",
+        why_title: "Your Trusted Door Partner",
+        why_desc: "Discover what makes The 3 Star Auto Door your preferred choice for automatic door solutions",
+        feat_1_title: "Fast Installation",
+        feat_1_desc: "We understand time is valuable. Our team works efficiently to complete installations with minimal disruption.",
+        feat_2_title: "High-Quality Brands",
+        feat_2_desc: "We use only premium components from trusted manufacturers to ensure durability and reliability.",
+        feat_3_title: "Affordable Pricing",
+        feat_3_desc: "Competitive pricing without compromising on quality, offering excellent value for your investment.",
+        feat_4_title: "24/7 Emergency Service",
+        feat_4_desc: "Door emergencies don't wait for business hours. Our emergency team is available round the clock.",
+        feat_5_title: "Warranty on Installation",
+        feat_5_desc: "Peace of mind with comprehensive warranty coverage on all our installation services.",
+        feat_6_title: "After-Sales Support",
+        feat_6_desc: "Our relationship continues after installation with reliable maintenance and support services.",
+        proj_subtitle: "Our Projects",
+        proj_title: "Recent Installations",
+        proj_desc: "Browse through our portfolio of completed automatic door installations and repairs",
+        gal_1_title: "Commercial Sliding Doors",
+        gal_1_desc: "Office building entrance",
+        gal_2_title: "Hospital Swing Doors",
+        gal_2_desc: "Healthcare facility installation",
+        gal_3_title: "Glass Automatic Doors",
+        gal_3_desc: "Retail store entrance",
+        gal_4_title: "Motor Replacement",
+        gal_4_desc: "Commercial door repair",
+        gal_5_title: "Custom Solution",
+        gal_5_desc: "Specialized industrial application",
+        gal_6_title: "Regular Maintenance",
+        gal_6_desc: "Preventive care service",
+        test_subtitle: "Testimonials",
+        test_title: "What Our Clients Say",
+        test_desc: "Hear from our satisfied customers about their experience with The 3 Star Auto Door",
+        test_1_text: "\"The team at 3 Star Auto Door installed automatic sliding doors at our office entrance. They were professional, efficient, and the doors work perfectly. We've had zero issues since installation. Highly recommended!\"",
+        test_1_auth: "Ahmed Al-Mansoori",
+        test_1_role: "Office Manager, Al-Noor Enterprises",
+        quote_subtitle: "Get In Touch",
+        quote_title: "Request a Quotation",
+        quote_desc: "Get in touch with us for a free, no-obligation quote on your automatic door project",
+        form_name: "Full Name",
+        form_phone: "Phone Number",
+        form_email: "Email Address",
+        form_service: "Service Needed",
+        form_msg: "Additional Details",
+        form_submit: "Submit Request",
+        opt_select: "Select a service",
+        opt_inst: "Automatic Door Installation",
+        opt_repair: "Door Repair & Maintenance",
+        opt_parts: "Spare Parts",
+        opt_custom: "Custom Solution",
+        opt_other: "Other",
+        ph_name: "Your Full Name",
+        ph_phone: "Your Phone Number",
+        ph_email: "Your Email Address",
+        ph_msg: "Please provide any additional information about your project...",
+        footer_about_title: "3 Star Auto Door",
+        footer_about_text: "Professional automatic door installation, repair, and maintenance services. Serving residential, commercial, and industrial clients with quality and reliability.",
+        footer_links: "Quick Links",
+        footer_contact: "Contact Info",
+        contact_phone: "Phone:",
+        contact_email: "Email:",
+        contact_addr: "Address:",
+        addr_text: "Khamis Mushait, Saudi Arabia",
+        footer_hours: "Operating Hours",
+        days_week: "Sunday - Thursday:",
+        day_fri: "Friday:",
+        day_sat: "Saturday:",
+        closed: "Closed",
+        emergency: "Emergency Service:",
+        copyright: "&copy; 2023 3 Star Auto Door. All Rights Reserved.",
+        // Form Status Messages
+        sending: "Sending...",
+        success_msg: "Request received successfully! We will contact you soon.",
+        error_msg: "An error occurred, please try again later.",
+        network_error: "Connection error, please check your internet."
+    },
+    ar: {
+        page_title: "3 ستار للأبواب الأوتوماتيكية - حلول متكاملة",
+        logo_text_1: "3 ستار ",
+        logo_text_2: " للأبواب",
+        nav_home: "الرئيسية",
+        nav_services: "خدماتنا",
+        nav_projects: "المشاريع",
+        nav_about: "من نحن",
+        nav_contact: "اتصل بنا",
+        nav_quote: "طلب عرض سعر",
+        hero_badge: "حلول الأبواب الأوتوماتيكية المتميزة",
+        hero_title: "متخصصون في تركيب وإصلاح الأبواب الأوتوماتيكية",
+        hero_desc: "تركيب سريع • خدمة طوارئ 24/7 • ماركات عالية الجودة<br>نخدم المنازل والشركات والقطاعات الصناعية",
+        btn_quote: "اطلب عرض سعر",
+        btn_contact: "اتصل بنا",
+        service_subtitle: "خدماتنا",
+        service_title: "حلول أبواب شاملة",
+        service_desc: "نقدم خدمات احترافية للأبواب الأوتوماتيكية للتطبيقات السكنية والتجارية والصناعية",
+        srv_1_title: "أبواب سحاب أوتوماتيكية",
+        srv_1_desc: "تركيب وإصلاح احترافي للأبواب المنزلقة الأوتوماتيكية للاستخدام التجاري والسكني.",
+        srv_2_title: "أبواب مفصلية أوتوماتيكية",
+        srv_2_desc: "أنظمة أبواب مفصلية فعالة توفر سهولة الوصول والراحة لجميع المستخدمين.",
+        srv_3_title: "الإصلاح والصيانة",
+        srv_3_desc: "خدمات صيانة دورية وإصلاح فوري للحفاظ على عمل أبوابك الأوتوماتيكية بكفاءة تامة.",
+        srv_4_title: "استبدال المحركات والحساسات",
+        srv_4_desc: "استبدال المحركات والحساسات التالفة بمكونات عالية الجودة من ماركات موثوقة.",
+        srv_5_title: "توصيل قطع الغيار",
+        srv_5_desc: "توصيل سريع لقطع غيار أصلية لجميع الماركات والموديلات الرئيسية للأبواب.",
+        srv_6_title: "حلول أبواب مخصصة",
+        srv_6_desc: "حلول أبواب أوتوماتيكية مصممة خصيصاً لتلبية متطلباتك ومساحتك المحددة.",
+        learn_more: "المزيد",
+        why_subtitle: "لماذا تختارنا",
+        why_title: "شريكك الموثوق للأبواب",
+        why_desc: "اكتشف ما يجعل 3 ستار الخيار المفضل لحلول الأبواب الأوتوماتيكية",
+        feat_1_title: "تركيب سريع",
+        feat_1_desc: "ندرك قيمة الوقت. يعمل فريقنا بكفاءة لإكمال التركيب بأقل قدر من التعطيل.",
+        feat_2_title: "ماركات عالية الجودة",
+        feat_2_desc: "نستخدم فقط مكونات متميزة من مصنعين موثوقين لضمان المتانة والموثوقية.",
+        feat_3_title: "أسعار تنافسية",
+        feat_3_desc: "أسعار منافسة دون المساومة على الجودة، مما يوفر قيمة ممتازة لاستثمارك.",
+        feat_4_title: "خدمة طوارئ 24/7",
+        feat_4_desc: "أعطال الأبواب لا تنتظر ساعات العمل. فريق الطوارئ لدينا متاح على مدار الساعة.",
+        feat_5_title: "ضمان على التركيب",
+        feat_5_desc: "راحة بال تامة مع تغطية ضمان شاملة على جميع خدمات التركيب لدينا.",
+        feat_6_title: "دعم ما بعد البيع",
+        feat_6_desc: "علاقتنا تستمر بعد التركيب مع خدمات صيانة ودعم موثوقة.",
+        proj_subtitle: "مشاريعنا",
+        proj_title: "أحدث التركيبات",
+        proj_desc: "تصفح معرض أعمالنا من التركيبات والإصلاحات المنجزة",
+        gal_1_title: "أبواب سحاب تجارية",
+        gal_1_desc: "مدخل مبنى مكاتب",
+        gal_2_title: "أبواب مستشفيات",
+        gal_2_desc: "تركيب لمنشأة طبية",
+        gal_3_title: "أبواب زجاجية",
+        gal_3_desc: "مدخل متجر بيع بالتجزئة",
+        gal_4_title: "استبدال محرك",
+        gal_4_desc: "إصلاح باب تجاري",
+        gal_5_title: "حلول مخصصة",
+        gal_5_desc: "تطبيق صناعي خاص",
+        gal_6_title: "صيانة دورية",
+        gal_6_desc: "خدمة صيانة وقائية",
+        test_subtitle: "آراء العملاء",
+        test_title: "ماذا يقول عملاؤنا",
+        test_desc: "اقرأ تجارب عملائنا الراضين عن خدمات 3 ستار للأبواب الأوتوماتيكية",
+        test_1_text: "\"قام فريق 3 ستار بتركيب أبواب سحاب أوتوماتيكية لمدخل مكتبنا. كانوا محترفين وسريعين، والأبواب تعمل بشكل مثالي. لم نواجه أي مشاكل منذ التركيب. أنصح بهم بشدة!\"",
+        test_1_auth: "أحمد المنصوري",
+        test_1_role: "مدير مكتب، مؤسسة النور",
+        quote_subtitle: "تواصل معنا",
+        quote_title: "اطلب عرض سعر",
+        quote_desc: "تواصل معنا للحصول على عرض سعر مجاني لمشروعك",
+        form_name: "الاسم الكامل",
+        form_phone: "رقم الهاتف",
+        form_email: "البريد الإلكتروني",
+        form_service: "الخدمة المطلوبة",
+        form_msg: "تفاصيل إضافية",
+        form_submit: "إرسال الطلب",
+        opt_select: "اختر خدمة",
+        opt_inst: "تركيب باب أوتوماتيكي",
+        opt_repair: "إصلاح وصيانة الأبواب",
+        opt_parts: "قطع غيار",
+        opt_custom: "حلول مخصصة",
+        opt_other: "أخرى",
+        ph_name: "الاسم الكامل",
+        ph_phone: "رقم الهاتف",
+        ph_email: "البريد الإلكتروني",
+        ph_msg: "يرجى تقديم أي معلومات إضافية حول مشروعك...",
+        footer_about_title: "عن 3 ستار",
+        footer_about_text: "خدمات احترافية لتركيب وصيانة وإصلاح الأبواب الأوتوماتيكية. نخدم العملاء السكنيين والتجاريين والصناعيين بجودة وموثوقية.",
+        footer_links: "روابط سريعة",
+        footer_contact: "معلومات الاتصال",
+        contact_phone: "الهاتف:",
+        contact_email: "البريد:",
+        contact_addr: "العنوان:",
+        addr_text: "خميس مشيط، المملكة العربية السعودية",
+        footer_hours: "ساعات العمل",
+        days_week: "الأحد - الخميس:",
+        day_fri: "الجمعة:",
+        day_sat: "السبت:",
+        closed: "مغلق",
+        emergency: "خدمة الطوارئ:",
+        copyright: "&copy; 2023 3 ستار للأبواب الأوتوماتيكية. جميع الحقوق محفوظة.",
+        // Form Status Messages
+        sending: "جاري الإرسال...",
+        success_msg: "تم استلام طلبك بنجاح! سنتواصل معك قريباً.",
+        error_msg: "حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً",
+        network_error: "حدث خطأ في الاتصال، يرجى التحقق من الإنترنت"
+    }
+};
 
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const nav = document.querySelector('nav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Language Switcher
-        const langBtnEn = document.getElementById('lang-en');
-        const langBtnAr = document.getElementById('lang-ar');
-        const htmlElement = document.documentElement;
-        
-        function switchLanguage(lang) {
-            // Update active button
-            if (lang === 'ar') {
-                langBtnAr.classList.add('active');
-                langBtnEn.classList.remove('active');
-                htmlElement.setAttribute('dir', 'rtl');
-                htmlElement.setAttribute('lang', 'ar');
+// --- 2. MOBILE MENU ---
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.querySelector('nav');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
+            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+}
+
+// --- 3. LANGUAGE SWITCHER ---
+const langBtnEn = document.getElementById('lang-en');
+const langBtnAr = document.getElementById('lang-ar');
+const htmlElement = document.documentElement;
+
+function switchLanguage(lang) {
+    // Update active button state
+    if (langBtnAr && langBtnEn) {
+        if (lang === 'ar') {
+            langBtnAr.classList.add('active');
+            langBtnEn.classList.remove('active');
+            htmlElement.setAttribute('dir', 'rtl');
+            htmlElement.setAttribute('lang', 'ar');
+        } else {
+            langBtnEn.classList.add('active');
+            langBtnAr.classList.remove('active');
+            htmlElement.setAttribute('dir', 'ltr');
+            htmlElement.setAttribute('lang', 'en');
+        }
+    }
+
+    // Update Text Content
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            if (el.tagName === 'INPUT' && el.type === 'submit') {
+                el.value = translations[lang][key];
+            } else if (el.tagName === 'SPAN') {
+                el.innerText = translations[lang][key];
             } else {
-                langBtnEn.classList.add('active');
-                langBtnAr.classList.remove('active');
-                htmlElement.setAttribute('dir', 'ltr');
-                htmlElement.setAttribute('lang', 'en');
+                el.innerHTML = translations[lang][key];
             }
-
-            // Update Text Content
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) {
-                    // If it's an input with a value attribute (like button)
-                    if (el.tagName === 'INPUT' && el.type === 'submit') {
-                        el.value = translations[lang][key];
-                    } else {
-                        // For normal elements, use innerHTML to allow simple formatting tags like <br>
-                        el.innerHTML = translations[lang][key];
-                    }
-                }
-            });
-
-            // Update Placeholders
-            const placeholders = document.querySelectorAll('[data-i18n-ph]');
-            placeholders.forEach(el => {
-                const key = el.getAttribute('data-i18n-ph');
-                if (translations[lang][key]) {
-                    el.placeholder = translations[lang][key];
-                }
-            });
         }
+    });
 
-        langBtnEn.addEventListener('click', () => switchLanguage('en'));
-        langBtnAr.addEventListener('click', () => switchLanguage('ar'));
-        
-        // Hero Slideshow
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-        
-        function showSlide(n) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[n].classList.add('active');
+    // Update Placeholders
+    const placeholders = document.querySelectorAll('[data-i18n-ph]');
+    placeholders.forEach(el => {
+        const key = el.getAttribute('data-i18n-ph');
+        if (translations[lang][key]) {
+            el.placeholder = translations[lang][key];
         }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
+    });
+}
+
+if (langBtnEn) langBtnEn.addEventListener('click', () => switchLanguage('en'));
+if (langBtnAr) langBtnAr.addEventListener('click', () => switchLanguage('ar'));
+
+// --- 4. HERO SLIDESHOW ---
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    if (slides[n]) slides[n].classList.add('active');
+}
+
+function nextSlide() {
+    if (slides.length > 0) {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+}
+
+if (slides.length > 0) {
+    setInterval(nextSlide, 5000);
+}
+
+// --- 5. SMOOTH SCROLLING ---
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 90,
+                behavior: 'smooth'
+            });
+            // Close mobile menu
+            if (nav) nav.classList.remove('active');
+            if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
         }
-        
-        // Change slide every 5 seconds
-        setInterval(nextSlide, 5000);
-        
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 90,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    nav.classList.remove('active');
-                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-        });
-        
-        // Form Submission
-        const quotationForm = document.getElementById('quotation-form');
-        
-        quotationForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Check current language for alert message
-            const isRtl = htmlElement.getAttribute('dir') === 'rtl';
-            const msg = isRtl ? 
-                'شكراً لطلبك! سنتواصل معك قريباً.' : 
-                'Thank you for your request! We will contact you shortly.';
-            
-            alert(msg);
-            quotationForm.reset();
-        });
-        
-        // Sticky Header on Scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-        });
-        
-        // Fade-in animation on scroll
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const fadeInOnScroll = () => {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        };
-        
-        // Set initial state for fade elements
-        fadeElements.forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(30px)';
-            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-        });
-        
-        window.addEventListener('scroll', fadeInOnScroll);
-        // Trigger once on load
-        window.addEventListener('load', fadeInOnScroll);
+    });
+});
 
+// --- 6. STICKY HEADER ---
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (header) {
+        if (window.scrollY > 100) {
+            header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    }
+});
 
-	const form = document.getElementById("quotation-form");
+// --- 7. FADE-IN ANIMATION ---
+const fadeElements = document.querySelectorAll('.fade-in');
+const fadeInOnScroll = () => {
+    fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+};
+
+fadeElements.forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(30px)';
+    element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+});
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('load', fadeInOnScroll);
+
+// --- 8. FORMSPREE SUBMISSION (INTEGRATED) ---
+const form = document.getElementById("quotation-form");
+
+async function handleSubmit(event) {
+    event.preventDefault();
     
-    async function handleSubmit(event) {
-        event.preventDefault();
-        
-        const status = document.getElementById("form-status");
-        const btn = document.querySelector(".submit-btn");
-        const btnTextSpan = btn.querySelector("span");
-        const originalText = btnTextSpan.innerText;
-        const data = new FormData(event.target);
+    const status = document.getElementById("form-status");
+    const btn = document.querySelector(".submit-btn");
+    const btnTextSpan = btn.querySelector("span");
+    const originalText = btnTextSpan.innerText;
+    const data = new FormData(event.target);
 
-        // 1. Show Loading State
-        btnTextSpan.innerText = "جاري الإرسال..."; 
-        btn.disabled = true;
-        status.style.display = "none";
+    // Determine current language from HTML tag to show correct messages
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
+    const txt = translations[currentLang];
 
-        // 2. Send to Formspree
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                // 3. Success
+    // 1. Show Loading State
+    btnTextSpan.innerText = txt.sending; 
+    btn.disabled = true;
+    if (status) status.style.display = "none";
+
+    // 2. Send to Formspree
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            // 3. Success
+            if (status) {
                 status.style.display = "block";
                 status.style.color = "green";
-                status.innerText = "تم استلام طلبك بنجاح! سنتواصل معك قريباً.";
-                form.reset(); // Clear form inputs
-                
-                // Reset button
-                btnTextSpan.innerText = originalText;
-                btn.disabled = false;
-                
-                // Hide message after 5 seconds
-                setTimeout(() => { status.style.display = "none"; }, 5000);
-            } else {
-                // 4. Formspree Error
-                response.json().then(data => {
+                status.innerText = txt.success_msg;
+            }
+            form.reset(); 
+            
+            // Reset button
+            btnTextSpan.innerText = originalText;
+            btn.disabled = false;
+            
+            // Hide message after 5 seconds
+            if (status) setTimeout(() => { status.style.display = "none"; }, 5000);
+        } else {
+            // 4. Formspree Error
+            response.json().then(data => {
+                if (status) {
                     if (Object.hasOwn(data, 'errors')) {
                         status.innerText = data["errors"].map(error => error["message"]).join(", ");
                     } else {
-                        status.innerText = "حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً";
+                        status.innerText = txt.error_msg;
                     }
                     status.style.display = "block";
                     status.style.color = "red";
-                    btnTextSpan.innerText = originalText;
-                    btn.disabled = false;
-                });
-            }
-        }).catch(error => {
-            // 5. Network Error
+                }
+                btnTextSpan.innerText = originalText;
+                btn.disabled = false;
+            });
+        }
+    }).catch(error => {
+        // 5. Network Error
+        if (status) {
             status.style.display = "block";
             status.style.color = "red";
-            status.innerText = "حدث خطأ في الاتصال، يرجى التحقق من الإنترنت";
-            btnTextSpan.innerText = originalText;
-            btn.disabled = false;
-        });
-    }
+            status.innerText = txt.network_error;
+        }
+        btnTextSpan.innerText = originalText;
+        btn.disabled = false;
+    });
+}
 
+if (form) {
     form.addEventListener("submit", handleSubmit);
+}
     </script>
 </body>
 </html>
