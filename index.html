@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title"> ستار للأبواب الأوتوماتيكية - حلول متكاملة 3 </title>
+    <title data-i18n="page_title">  ثلاثة ستار للأبواب الأوتوماتيكية - حلول متكاملة</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
     <meta name="description" content="خدمات احترافية لتركيب وصيانة الأبواب الأوتوماتيكية. تركيب سريع، خدمة طوارئ 24/7، وماركات عالمية عالية الجودة.">
     
@@ -35,7 +35,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* Default font for English */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -84,6 +83,8 @@
             display: flex;
             align-items: center;
             transition: var(--transition);
+            z-index: 1002; /* Ensure logo is clickable */
+            position: relative;
         }
 
         .logo:hover {
@@ -148,6 +149,8 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            position: relative;
+            z-index: 1002; /* FIX: Ensures language buttons stay above mobile menu */
         }
 
         .language-switcher {
@@ -185,6 +188,8 @@
             height: 44px;
             border-radius: 50%;
             transition: var(--transition);
+            z-index: 1002; /* FIX: Ensures hamburger is clickable */
+            position: relative;
         }
 
         .mobile-menu-btn:hover {
@@ -303,7 +308,7 @@
             cursor: pointer;
             border: none;
             font-size: 1rem;
-            gap: 10px; /* Increased gap for icon spacing */
+            gap: 10px;
             position: relative;
             overflow: hidden;
         }
@@ -394,10 +399,11 @@
             font-size: 1.1rem;
         }
 
-        /* Services Section */
+        /* Services Section - FIXED GRID */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            /* FIX: Changed min-width to 280px to fit mobile screens */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -491,6 +497,7 @@
 
         .features-grid {
             display: grid;
+            /* FIX: Changed min-width to 280px */
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
@@ -560,10 +567,11 @@
             font-weight: 700;
         }
 
-        /* Gallery */
+        /* Gallery - FIXED GRID */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            /* FIX: Changed min-width to 280px to fit mobile */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 25px;
         }
 
@@ -985,7 +993,8 @@
             animation-delay: 0.6s;
         }
 
-        /* Responsive Styles */
+        /* --- RESPONSIVE / MOBILE STYLES (UPDATED & FIXED) --- */
+        
         @media (max-width: 1200px) {
             .hero-content h1 {
                 font-size: 3rem;
@@ -1012,6 +1021,7 @@
         }
 
         @media (max-width: 768px) {
+            /* FIX: Fixed Ghost Clicks & Menu Visibility */
             nav {
                 position: fixed;
                 top: 90px;
@@ -1019,10 +1029,16 @@
                 width: 100%;
                 background-color: var(--white);
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                transform: translateY(-100%);
+                
+                /* Critical Fixes for Mobile Interaction */
+                transform: translateY(-20px); 
                 opacity: 0;
+                visibility: hidden;      /* Hides from screen readers/clicks */
+                pointer-events: none;    /* Clicks pass through to elements below */
+                /* ------------------------------ */
+                
                 transition: var(--transition);
-                z-index: 999;
+                z-index: 990; /* Below header actions */
                 border-radius: 0 0 20px 20px;
                 padding: 20px 0;
             }
@@ -1030,6 +1046,8 @@
             nav.active {
                 transform: translateY(0);
                 opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
             }
 
             nav ul {
@@ -1051,13 +1069,20 @@
             .mobile-menu-btn {
                 display: block;
             }
+            
+            .header-container {
+                padding: 15px 5%;
+            }
 
+            /* Improved Typography for Mobile */
             .hero-content h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
+                padding: 0 10px;
             }
 
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+                padding: 0 10px;
             }
 
             .cta-buttons {
@@ -1071,8 +1096,9 @@
                 max-width: 280px;
             }
 
+            /* Reduced padding for mobile */
             section {
-                padding: 80px 5%;
+                padding: 60px 5%;
             }
             
             .section-title {
@@ -1082,15 +1108,19 @@
             .service-card, .feature, .testimonial {
                 padding: 30px 20px;
             }
+            
+            .contact-form-container {
+                padding: 30px 20px;
+            }
         }
 
         @media (max-width: 576px) {
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .section-title h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .hero-badge {
@@ -1112,6 +1142,23 @@
             [dir="rtl"] .whatsapp-float {
                 right: auto;
                 left: 20px;
+            }
+        }
+        
+        /* Extra Small Devices Support */
+        @media (max-width: 400px) {
+            .services-grid, .gallery-grid, .features-grid {
+                grid-template-columns: 1fr; /* Single column */
+            }
+            
+            .logo span {
+                font-size: 1rem;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
             }
         }
     </style>
@@ -1414,7 +1461,7 @@
     </div>
     
     <div class="contact-form-container fade-in">
-        <form id="quotation-form" action="https://formspree.io/f/xblwgynb" method="POST">
+        <form id="quotation-form" action="https://formspree.io/f/xanznnwv" method="POST">
             <div class="form-row">
                 <div class="form-group">
                     <label for="name" data-i18n="form_name">الاسم الكامل</label>
@@ -1963,5 +2010,3 @@ if (form) {
     </script>
 </body>
 </html>
-
-
